@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- stsrt nav -->
+    <nav class="navbar navbar-expand-lg bg-dark py-5">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <div>
+                <img src="./imgs/logo.png" alt="logo" >
+                <span class="text-white ">Weather</span>
+            </div>
+            <p  > tagline goes here</p>
+          </a>
+          <button class="navbar-toggler bg-transparent  bar " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bar-icon">
+             
+            </span>
+             
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-0 mb-lg-0  ">
+              <li class="nav-item px-3">
+                <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link px-4" href="#">News</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link px-4" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link  px-4" href="#">Photos</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link vip  px-4" href="#">Contact</a>
+              </li>
+             
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      <!-- end nav -->
+
+     
+       <div class="container">
+          <!-- start main -->
+        <section class="main ">
+          <div class="parent">
+            <input type="search" class="w-100 type text-white" placeholder="Find Your Location...">
+            <button class="bg-info border-0 search">Find</button>
+          </div>
+         
+         </section>
+         <!-- end main -->
+
+          <div class="cards">
+            <div class="row " >
+
+              <!-- first card -->
+              <div class="col-md-4">
+                <div class="card  border-0 " id="first">
+                  <div class="card-header d-flex justify-content-between ">
+                    <p class="mt-2" id="firstDay">Tuesday</p>
+                    <p class="mt-2" id="firstCardDate">18 June</p>
+                  </div>
+                  <div class="card-body text-white ">
+                    <p class="mt-3" id="country">Cairo</p>
+                    <h3 class="card-title text-center ">32.2oC</h3>
+                    <img src='' class=" ms-4  mt-4 text-warning" >
+                    <p class="my-3 sunny theWeather" >sunny</p>
+
+                    <div class="footer d-flex justify-content-evenly ">
+                      <div class="px-3">
+                        <i class="fa-solid fa-umbrella "></i>
+                        <span id="shadow">20%</span>
+                      </div>
+                      <div  class="px-3">
+                        <i class="fa-solid fa-wind "></i>
+                        <span id="wind">18km/h</span>
+                      </div>
+                      <div  class="px-3">
+                        <i class="fa-solid fa-compass"></i>
+                        <span id="compass">East</span>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+                 
+                  
+                </div>
+
+               
+              </div>
+
+              <!-- sec card -->
+              <div class="col-md-4">
+                <div class="card border-0 ">
+                  <div class="card-header   ">
+                    <p class="mt-2 text-center" id="secondDay">Wednesday</p>
+                    
+                  </div>
+                  <div class="card-body text-white middle text-center">
+                    <img id="secondIcon" src='' class="  mt-4 text-warning" >
+                    <p class="card-title text-center fs-1 text-white bolder " id="tempMax">oC</p>
+                    <p class="card-title text-center" id="tempMin">32.2oC</p>
+                   
+                    <p class="my-3 sunny" id="secondWeather">sunny</p>
+
+                    
+                   
+                  </div>
+
+                 
+                  
+                </div>
+
+               
+              </div>
+
+              <!-- third card -->
+              <div class="col-md-4">
+                <div class="card border-0 ">
+                  <div class="card-header  ">
+                    <p class="mt-2 text-center" id="thirdDay">Wednesday</p>
+                    
+                  </div>
+                  <div class="card-body text-white middle text-center">
+                    <img id="thirdIcon" src='' class="  mt-4 text-warning" >
+                    <p class="card-title text-center fs-1 text-white bolder" id="tempMax3">32.2oC</p>
+                    <p class="card-title text-center " id="tempMin3">32.2oC</p>
+                   
+                    <p class="my-3 sunny" id="thirdWeather">sunny</p>
+
+                    
+                   
+                  </div>
+
+                 
+                  
+                </div>
+
+               
+              </div>
+             
+              
+
+              
+            </div>
+          </div>
+       </div>
+
+       <div class="body-footer ">
+        <div class="container">
+          <div class="row"  >
+          <div class="col-lg-12">
+            <div class="parent">
+              <input type="text" class="w-100 " placeholder="Enter Your Email To Subscribe">
+             
+              <button class="bg-info border-0 ">Subscribe</button>
+            </div>
+            <div class="social-icons my-3 d-flex justify-content-center align-items-center">
+              <div class="circle d-flex justify-content-center align-items-center mx-3">
+                <i class="fa-brands fa-facebook-f  "></i>
+              </div>
+              <div class="circle d-flex justify-content-center align-items-center mx-3">
+                <i class="fa-brands fa-twitter "></i>
+              </div>
+              <div class="circle d-flex justify-content-center align-items-center mx-3">
+                <i class="fa-brands fa-google-plus-g "></i>
+              </div>
+              <div class="circle d-flex justify-content-center align-items-center mx-3">
+                <i class="fa-brands fa-pinterest "></i>
+              </div>
+            </div>
+
+            <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          </div>
+            
+          </div>
+        </div>
+       </div>
+      
+      
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <p class="mt-2">Tuesday</p>
+                    <p class="mt-2">18June</p>
+                  </div>
+                  <div class="card-body text-white ">
+                    <p class="mt-3">Cairo</p>
+                    <h3 class="card-title text-center ">32.2oC</h3>
+                    <i class="fa-solid fa-sun ms-4 fs-2 mt-4 text-warning"></i>
+                    <p class="my-3 sunny">sunny</p>
+
+                    <div class="footer d-flex justify-content-evenly">
+                      <div>
+                        <i class="fa-solid fa-umbrella"></i>
+                        <span>20%</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-umbrella"></i>
+                        <span>18km/h</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-umbrella"></i>
+                        <span>East</span>
+                      </div>
+                    </div> -->
